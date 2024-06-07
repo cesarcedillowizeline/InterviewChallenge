@@ -1,0 +1,6 @@
+@API.InterviewChallenge_HostAddress = http://localhost:5282
+
+GET {{API.InterviewChallenge_HostAddress}}/booking/
+Accept: application/json
+
+###
