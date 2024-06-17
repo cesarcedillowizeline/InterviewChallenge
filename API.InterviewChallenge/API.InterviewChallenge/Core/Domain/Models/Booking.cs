@@ -1,4 +1,4 @@
-namespace API.InterviewChallenge
+﻿namespace API.InterviewChallenge.Core.Domain.Models
 {
     public class Booking
     {
