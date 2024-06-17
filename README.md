@@ -10,7 +10,7 @@ You are responsible for developing an API to manage a hotel room booking system.
 1. **Create a booking**.
 2. **Retrieve booking details**.
 3. **Update a booking**.
-4. **Cancel a booking**.  s
+4. **Cancel a booking**.
 
 **Technical Requirements**:
 
