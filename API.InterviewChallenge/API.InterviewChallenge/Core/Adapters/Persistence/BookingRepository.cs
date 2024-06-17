@@ -14,35 +14,27 @@ namespace API.InterviewChallenge.Core.Adapters.Persistence
 
         public Task<Booking> AddAsync(Booking booking)
         {
-            _context.Bookings.Add(booking);
-            return Task.FromResult(booking);
+            throw new NotImplementedException();
         }
 
         public Task<Booking> GetByIdAsync(int id)
         {
-            return Task.FromResult(_context.Bookings.FirstOrDefault(b => b.Id == id));
+            throw new NotImplementedException();
+        }
+
+        public async Task<List<Booking>> GetBookingAsync(DateTime startDate, DateTime endDate)
+        {
+            throw new NotImplementedException();
         }
 
         public Task<Booking> UpdateAsync(Booking booking)
         {
-            var existingBooking = _context.Bookings.FirstOrDefault(b => b.Id == booking.Id);
-            if (existingBooking != null)
-            {
-                _context.Bookings.Remove(existingBooking);
-                _context.Bookings.Add(booking);
-            }
-            return Task.FromResult(booking);
+            throw new NotImplementedException();
         }
 
         public Task<bool> DeleteAsync(int id)
         {
-            var booking = _context.Bookings.FirstOrDefault(b => b.Id == id);
-            if (booking != null)
-            {
-                _context.Bookings.Remove(booking);
-                return Task.FromResult(true);
-            }
-            return Task.FromResult(false);
+            throw new NotImplementedException();
         }
     }
 }

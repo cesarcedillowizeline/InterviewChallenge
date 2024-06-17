@@ -8,6 +8,7 @@ namespace API.InterviewChallenge.Core.Domain.Interfaces
         Task<Booking> AddAsync(Booking booking);
         Task<Booking> GetByIdAsync(int id);
         Task<Booking> UpdateAsync(Booking booking);
+        Task<List<Booking>> GetBookingAsync(DateTime startDate, DateTime endDate);
         Task<bool> DeleteAsync(int id);
     }
 }

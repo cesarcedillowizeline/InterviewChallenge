@@ -9,6 +9,7 @@ You are responsible for developing an API to manage a hotel room booking system.
 
 1. **Create a booking**.
 2. **Retrieve booking details**.
+3. **Retrieve bookings between a couple of dates**.
 3. **Update a booking**.
 4. **Cancel a booking**.
 
@@ -59,7 +60,10 @@ public class Booking
 2. **Retrieve Booking Details**:
    - **Endpoint**: `GET /api/bookings/{id}`
 
-3. **Update Booking**:
+3. **Retrieve bookings between a couple of dates**:
+   - **Endpoint**: `GET /api/bookings/{startDate}/{endDate}`
+
+4. **Update Booking**:
    - **Endpoint**: `PUT /api/bookings/{id}`
    - **Request Body**:
      ```json
@@ -71,5 +75,5 @@ public class Booking
      }
      ```
 
-4. **Cancel Booking**:
+5. **Cancel Booking**:
    - **Endpoint**: `DELETE /api/bookings/{id}`

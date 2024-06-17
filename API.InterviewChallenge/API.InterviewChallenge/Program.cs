@@ -8,14 +8,17 @@ var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddControllers();
 
-// Register the IBookingService and its implementation
-builder.Services.AddScoped<IBookingService, BookingService>();
+//// Register the IBookingService and its implementation
+//builder.Services.AddScoped<IBookingService, BookingService>();
+//builder.Services.AddSingleton<IBookingService, BookingService>();
 
-// Register the IBookingRepository and its implementation
-builder.Services.AddScoped<IBookingRepository, BookingRepository>();
+//// Register the IBookingRepository and its implementation
+//builder.Services.AddScoped<IBookingRepository, BookingRepository>();
+//builder.Services.AddSingleton<IBookingRepository, BookingRepository>();
 
-// Register the InMemoryDbContext as a singleton
-builder.Services.AddSingleton<InMemoryDbContext>();
+//// Register the InMemoryDbContext as a singleton
+//builder.Services.AddScoped<InMemoryDbContext>();
+//builder.Services.AddSingleton<InMemoryDbContext>();
 
 var app = builder.Build();
 

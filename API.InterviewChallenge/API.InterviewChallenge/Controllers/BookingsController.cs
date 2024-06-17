@@ -34,6 +34,17 @@ namespace API.InterviewChallenge.Controllers
             return Ok(booking);
         }
 
+        [HttpGet("{startDate}/{endDate}")]
+        public async Task<ActionResult<Booking>> GetBooking(DateTime startDate, DateTime endDate)
+        {
+            var bookings = await _bookingService.GetBookingAsync(startDate,endDate);
+            if (bookings == null)
+            {
+                return NotFound();
+            }
+            return Ok(bookings);
+        }
+
         [HttpPut("{id}")]
         public async Task<IActionResult> UpdateBooking(int id, Booking booking)
         {
