@@ -1,4 +1,4 @@
-using API.InterviewChallenge.Adapters.Persistence;
+using API.InterviewChallenge.Core.Adapters.Persistence;
 using API.InterviewChallenge.Core.Domain.Interfaces;
 using API.InterviewChallenge.Core.Domain.Services;
 

@@ -1,7 +1,7 @@
 ﻿using API.InterviewChallenge.Core.Domain.Interfaces;
 using API.InterviewChallenge.Core.Domain.Models;
 
-namespace API.InterviewChallenge.Adapters.Persistence
+namespace API.InterviewChallenge.Core.Adapters.Persistence
 {
     public class BookingRepository : IBookingRepository
     {
