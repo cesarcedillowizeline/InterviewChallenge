@@ -24,9 +24,6 @@ You are responsible for developing an API to manage a hotel room booking system.
 3. **SOLID Principles**:
    - Ensure your code follows the SOLID principles to guarantee maintainability and scalability.
 
-4. **CQRS (Command Query Responsibility Segregation)**:
-   - Implement the CQRS pattern to separate reading and writing operations in your API.
-
 ## Specific Details
 
 **Booking Model**:
